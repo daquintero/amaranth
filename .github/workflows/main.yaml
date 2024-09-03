@@ -106,7 +106,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Download documentation archive
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: docs
           path: docs/
@@ -139,7 +139,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Download documentation archive
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: docs
           path: pages/docs/${{ github.ref_name }}/
